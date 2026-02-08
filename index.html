@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBT Master </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="cbt.css">
+</head>
+
+<body>
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop id="bgVideo">
+            <source
+                src="mixkit-video-of-the-earth-slowly-spinning-on-its-axis-29351-hd-ready.mp4"
+                type="video/mp4">
+            <!-- Fallback gradient background -->
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-container">
+            <div class="preloader-logo">
+                <div class="logo-circle">
+                    <i class="fas fa-brain"></i>
+                </div>
+            </div>
+            <div class="preloader-text">
+                <h2>CBT MASTER</h2>
+                <p>Loading Premium Exam Experience</p>
+            </div>
+            <div class="preloader-progress">
+                <div class="progress-bar"></div>
+            </div>
+            <div class="loading-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Welcome Screen -->
+    <section id="welcomeScreen" class="screen active">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+
+        <div class="container">
+            <div class="welcome-card">
+                <div class="welcome-header">
+                    <div class="logo-animated">
+                        <div class="logo-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h1 class="logo-text">
+                            <span class="logo-gradient">CBT</span>MASTER
+                        </h1>
+                    </div>
+                    <p class="tagline">Excellence in Academic Assessment</p>
+                </div>
+
+                <div class="welcome-content">
+                    <div class="creator-card">
+                        <div class="creator-avatar">
+                            <div class="avatar-glow"></div>
+                            <img src="creator.jpg"
+                                alt="Creator" class="avatar-img">
+                        </div>
+                        <div class="creator-info">
+                            <h3>Ayomide David Omole</h3>
+                            <p class="creator-title">Creative Developer & 100L Mathematics Student</p>
+                            <div class="creator-badges">
+                                <span class="badge"><i class="fas fa-code"></i> Full Stack Developer</span>
+                                <span class="badge"><i class="fas fa-calculator"></i> Mathematics Major</span>
+                                <span class="badge"><i class="fas fa-paper-plane"></i> Founder</span>
+                                <span class="badge"><i class="fas fa-code"></i> Programmer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="welcome-message">
+                        <h2><i class="fas fa-star"></i> Welcome to Ultimate CBT Experience</h2>
+                        <p>I've crafted this advanced exam platform to help OOU students prepare effectively for their coming exams. As a 100-level Mathematics student with strong interest in web development, I've designed this portal to provide a realistic, engaging practice environment that mirrors the actual OOU CBT experience.</p>
+
+                    <div class="start-section">
+                        <button class="start-btn" id="startBtn">
+                            <span class="btn-text">BEGIN CBT JOURNEY</span>
+                            <span class="btn-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                            <div class="btn-shine"></div>
+                        </button>
+                        <p class="hint"><i class="fas fa-lightbulb"></i> Experience the future of online assessment</p>
+                    </div>
+                    <div>@ayocodes</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Selection Screen -->
+    <section id="courseScreen" class="screen">
+        <div class="container">
+            <div class="course-header">
+                <button class="back-btn" id="backBtn">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Back to Welcome</span>
+                </button>
+                <h2 class="section-title">
+                    <span class="title-highlight">Select Your</span>
+                    <span class="title-gradient">Exam Course</span>
+                </h2>
+                <p class="section-subtitle">Choose between GST101 (Use of English) or GNS105 (Modern Agriculture)</p>
+            </div>
+
+            <div class="course-grid">
+                <div class="course-card" data-course="gst101">
+                    <div class="course-card-inner">
+                        <div class="course-card-front">
+                            <div class="course-icon">
+                                <i class="fas fa-language"></i>
+                                <div class="icon-glow"></div>
+                            </div>
+                            <h3>GST101</h3>
+                            <p class="course-subtitle">Use of English</p>
+                            <div class="course-stats">
+                                <span><i class="fas fa-question-circle"></i> 30 Questions</span>
+                                <span><i class="fas fa-clock"></i> 15 Minutes</span>
+                            </div>
+                            <div class="select-btn">
+                                Select Course
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                        <div class="course-card-back">
+                            <h4>Course Details</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Grammar & Vocabulary</li>
+                                <li><i class="fas fa-check"></i> Reading Comprehension</li>
+                                <li><i class="fas fa-check"></i> Writing Skills</li>
+                                <li><i class="fas fa-check"></i> Listening & Speaking</li>
+                                <li><i class="fas fa-check"></i> 5 Comprehensive Sections</li>
+                            </ul>
+                            <div class="difficulty">
+                                <span class="difficulty-label">Difficulty:</span>
+                                <div class="difficulty-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-course="gns105">
+                    <div class="course-card-inner">
+                        <div class="course-card-front">
+                            <div class="course-icon">
+                                <i class="fas fa-tractor"></i>
+                                <div class="icon-glow"></div>
+                            </div>
+                            <h3>GNS105</h3>
+                            <p class="course-subtitle">Modern Agriculture</p>
+                            <div class="course-stats">
+                                <span><i class="fas fa-question-circle"></i> 30 Questions</span>
+                                <span><i class="fas fa-clock"></i> 15 Minutes</span>
+                            </div>
+                            <div class="select-btn">
+                                Select Course
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                        <div class="course-card-back">
+                            <h4>Course Details</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Agricultural Systems</li>
+                                <li><i class="fas fa-check"></i> Rural Development</li>
+                                <li><i class="fas fa-check"></i> Farm Management</li>
+                                <li><i class="fas fa-check"></i> Livestock Production</li>
+                                <li><i class="fas fa-check"></i> 6 Comprehensive Sections</li>
+                            </ul>
+                            <div class="difficulty">
+                                <span class="difficulty-label">Difficulty:</span>
+                                <div class="difficulty-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="instructions-panel">
+                <h3><i class="fas fa-info-circle"></i> Exam Instructions</h3>
+                <div class="instructions-grid">
+                    <div class="instruction">
+                        <div class="instruction-icon timer">
+                            <i class="fas fa-hourglass-half"></i>
+                        </div>
+                        <h4>15 Minute Limit</h4>
+                        <p>Complete all questions within the time limit</p>
+                    </div>
+                    <div class="instruction">
+                        <div class="instruction-icon review">
+                            <i class="fas fa-flag"></i>
+                        </div>
+                        <h4>Mark for Review</h4>
+                        <p>Flag difficult questions to revisit later</p>
+                    </div>
+                    <div class="instruction">
+                        <div class="instruction-icon auto">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h4>Auto-Submit</h4>
+                        <p>Exam automatically submits when time ends</p>
+                    </div>
+                    <div class="instruction">
+                        <div class="instruction-icon results">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h4>Detailed Results</h4>
+                        <p>Get comprehensive performance analysis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exam Screen -->
+    <section id="examScreen" class="screen">
+        <div class="exam-container">
+            <!-- Exam Header -->
+            <div class="exam-header">
+                <div class="exam-header-left">
+                    <button class="exam-back-btn" id="examBackBtn">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <div class="exam-info">
+                        <h2 id="examTitle">GST101: Use of English</h2>
+                        <p id="examSubtitle">CBT Practice Examination</p>
+                    </div>
+                </div>
+
+                <div class="exam-header-right">
+                    <div class="timer-container">
+                        <div class="timer-display">
+                            <div class="timer-circle">
+                                <svg width="70" height="70" viewBox="0 0 120 120">
+                                    <circle class="timer-bg" cx="60" cy="60" r="54" fill="none"
+                                        stroke="rgba(255,255,255,0.1)" stroke-width="8"></circle>
+                                    <circle class="timer-progress" cx="60" cy="60" r="54" fill="none" stroke="#00d4ff"
+                                        stroke-width="8" stroke-linecap="round" transform="rotate(-90 60 60)"></circle>
+                                </svg>
+                                <div class="timer-text" id="timerDisplay">60:00</div>
+                            </div>
+                        </div>
+                        <div class="timer-labels">
+                            <span class="timer-label">Time Remaining</span>
+                            <span class="timer-warning" id="timerWarning"></span>
+                        </div>
+                    </div>
+
+                    <button class="fullscreen-btn" id="fullscreenBtn">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Exam Content -->
+            <div class="exam-content">
+                <!-- Question Panel -->
+                <div class="question-panel">
+                    <div class="question-header">
+                        <h3>Question <span id="currentQuestionNumber">1</span> of <span id="totalQuestions">50</span>
+                        </h3>
+                        <div class="question-status">
+                            <span class="status-indicator" id="questionStatus">Not Answered</span>
+                        </div>
+                    </div>
+
+                    <div class="question-body">
+                        <div class="question-text-container">
+                            <p id="questionText">Loading question...</p>
+                        </div>
+
+                        <div class="options-container" id="optionsContainer">
+                            <!-- Options loaded dynamically -->
+                        </div>
+                    </div>
+
+                    <div class="question-footer">
+                        <button class="action-btn mark-review" id="markReviewBtn">
+                            <i class="far fa-flag"></i>
+                            <span>Mark for Review</span>
+                        </button>
+
+                        <div class="question-nav">
+                            <button class="nav-btn prev-btn" id="prevBtn">
+                                <i class="fas fa-arrow-left"></i>
+                                Previous
+                            </button>
+                            <button class="nav-btn next-btn" id="nextBtn">
+                                Next
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="exam-sidebar">
+                    <div class="sidebar-section question-nav-sidebar">
+                        <h4><i class="fas fa-th"></i> Question Navigator</h4>
+                        <div class="question-grid" id="questionGrid">
+                            <!-- Question numbers loaded dynamically -->
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section progress-section">
+                        <h4><i class="fas fa-chart-pie"></i> Progress Overview</h4>
+                        <div class="progress-stats">
+                            <div class="progress-item">
+                                <div class="progress-label">
+                                    <span class="progress-color answered"></span>
+                                    Answered
+                                </div>
+                                <span class="progress-count" id="answeredCount">0</span>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-label">
+                                    <span class="progress-color not-answered"></span>
+                                    Not Answered
+                                </div>
+                                <span class="progress-count" id="notAnsweredCount">50</span>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-label">
+                                    <span class="progress-color marked"></span>
+                                    Marked for Review
+                                </div>
+                                <span class="progress-count" id="markedCount">0</span>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" id="progressBarFill"></div>
+                        </div>
+                        <div class="progress-text">
+                            <span id="progressPercentage">0%</span> Complete
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section submit-section">
+                        <button class="submit-exam-btn" id="submitExamBtn">
+                            <i class="fas fa-paper-plane"></i>
+                            Submit Exam
+                        </button>
+                        <p class="submit-warning">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            Exam auto-submits when time expires
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Screen -->
+    <section id="resultsScreen" class="screen">
+        <div class="results-container">
+            <div class="results-header">
+                <h2 class="results-title">
+                    <span class="title-gradient">Exam</span>
+                    <span class="title-highlight">Results</span>
+                </h2>
+                <p id="resultsCourse" class="results-subtitle">GST101: Use of English</p>
+            </div>
+
+            <div class="results-content">
+                <!-- Score Card -->
+                <div class="score-card">
+                    <div class="score-circle-container">
+                        <div class="score-circle">
+                            <svg width="200" height="200" viewBox="0 0 120 120">
+                                <circle class="score-bg" cx="60" cy="60" r="54" fill="none"
+                                    stroke="rgba(255,255,255,0.1)" stroke-width="8"></circle>
+                                <circle class="score-progress" cx="60" cy="60" r="54" fill="none" stroke="#00ff88"
+                                    stroke-width="8" stroke-linecap="round" transform="rotate(-90 60 60)"></circle>
+                            </svg>
+                            <div class="score-text">
+                                <span id="finalScore">0</span>
+                                <span class="score-percent">%</span>
+                            </div>
+                        </div>
+                        <div class="score-info">
+                            <h3 id="grade">GRADE: F</h3>
+                            <p id="performance">Performance: Needs Improvement</p>
+                            <div class="score-badge" id="scoreBadge">
+                                <i class="fas fa-award"></i>
+                                <span>Score Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Results Stats -->
+                <div class="results-stats">
+                    <div class="stat-card correct">
+                        <div class="stat-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h4>Correct Answers</h4>
+                            <p id="correctAnswers" class="stat-number">0</p>
+                        </div>
+                    </div>
+                    <div class="stat-card wrong">
+                        <div class="stat-icon">
+                            <i class="fas fa-times-circle"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h4>Wrong Answers</h4>
+                            <p id="wrongAnswers" class="stat-number">0</p>
+                        </div>
+                    </div>
+                    <div class="stat-card time">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h4>Time Used</h4>
+                            <p id="timeUsed" class="stat-number">0:00</p>
+                        </div>
+                    </div>
+                    <div class="stat-card accuracy">
+                        <div class="stat-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h4>Accuracy</h4>
+                            <p id="accuracyRate" class="stat-number">0%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section Breakdown -->
+                <div class="section-breakdown">
+                    <h3><i class="fas fa-chart-bar"></i> Section Performance Breakdown</h3>
+                    <div class="breakdown-container" id="sectionBreakdown">
+                        <!-- Sections loaded dynamically -->
+                    </div>
+                </div>
+
+                <!-- Question Review -->
+                <div class="question-review">
+                    <h3><i class="fas fa-search"></i> Review Your Answers</h3>
+                    <div class="review-controls">
+                        <button class="review-filter active" data-filter="all">All Questions</button>
+                        <button class="review-filter" data-filter="incorrect">Incorrect Answers</button>
+                        <button class="review-filter" data-filter="marked">Marked Questions</button>
+                    </div>
+                    <div class="review-questions" id="reviewQuestions">
+                        <!-- Questions loaded dynamically -->
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="results-actions">
+                    <button class="action-btn retake" id="retakeBtn">
+                        <i class="fas fa-redo"></i>
+                        Retake Exam
+                    </button>
+                    <button class="action-btn new-course" id="newCourseBtn">
+                        <i class="fas fa-book-open"></i>
+                        New Course
+                    </button>
+                    <button class="action-btn print" id="printResultsBtn">
+                        <i class="fas fa-print"></i>
+                        Print Results
+                    </button>
+                    <button class="action-btn share" id="shareResultsBtn">
+                        <i class="fas fa-share-alt"></i>
+                        Share
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Confirmation Modal -->
+    <div class="modal" id="confirmationModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-exclamation-triangle"></i> Confirm Submission</h3>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>You have <span id="remainingQuestionsCount" class="highlight">0</span> unanswered questions.</p>
+                <p>Once submitted, you cannot make changes to your answers.</p>
+                <div class="modal-stats">
+                    <div class="modal-stat">
+                        <span class="modal-stat-label">Answered:</span>
+                        <span id="modalAnsweredCount" class="modal-stat-value">0</span>
+                    </div>
+                    <div class="modal-stat">
+                        <span class="modal-stat-label">Marked:</span>
+                        <span id="modalMarkedCount" class="modal-stat-value">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-btn cancel" id="cancelSubmitBtn">Continue Exam</button>
+                <button class="modal-btn confirm" id="confirmSubmitBtn">Submit Anyway</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fullscreen Warning -->
+    <div class="fullscreen-warning" id="fullscreenWarning">
+        <div class="warning-content">
+            <i class="fas fa-expand-arrows-alt"></i>
+            <p>Fullscreen Mode Active - Press <kbd>ESC</kbd> to exit</p>
+        </div>
+    </div>
+
+    <!-- Floating Particles -->
+    <div class="particles-container" id="particlesContainer"></div>
+
+    <!-- Sound Effects (Hidden) -->
+    <audio id="clickSound" preload="auto">
+        <source src="mixkit-fast-double-click-on-mouse-275.wav" type="audio/mpeg/wav">
+    </audio>
+    <audio id="correctSound" preload="auto">
+        <source src="mixkit-correct-positive-notification-957 (1).wav" type="audio/mpeg/wav">
+    </audio>
+    <audio id="submitSound" preload="auto">
+        <source src="mixkit-achievement-bell-600.wav" type="audio/mpeg/wav">
+    </audio>
+
+    <script src="questions.js"></script>
+    <script src="cbt.js"></script>
+</body>
+
+</html>
